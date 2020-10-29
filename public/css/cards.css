@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --color-background: #FBDFDB;
+    --color-text: #111111;
+    --color-text-back: #000000;
+    --color-description: #777777;
+    --color-footer: #EEEEEE;
+    --color-footer-text: #999999;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.favorites {
+    padding: 40px 0 25px;
+    font-size: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 940px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-text);
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--color-description);
+}
+
+/*============MODAL============*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #FFFFFF;
+    width: 660px;
+    height: 413px;
+    margin: 20vh auto;
+    position: relative;
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 320px;
+    bottom: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.modal-overlay.active  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content img {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 30px;
+    left: 30px;
+    border-radius: 15px;
+}
+
+.modal-text {
+    width: 660px;
+    height: 40px;
+    text-align: center;
+}
+
+

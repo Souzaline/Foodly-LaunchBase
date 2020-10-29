@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --color-background: #FBDFDB;
+    --color-text: #111111;
+    --color-text-back: #000000;
+    --color-description: #777777;
+    --color-footer: #EEEEEE;
+    --color-footer-text: #999999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 40px 40px 40px 0;
+}
+
+.logo {
+    padding: 0 80px 0 0;
+    vertical-align: middle;
+}
+
+
+.links a {
+    margin: 0 19px;
+    text-decoration: none;
+    color: var (var(--color-text));
+}
+
+.slogam {
+    background-color: var(--color-background);
+    height: 366px;
+    width: 940px;
+    border-radius: 30px;
+    position: relative;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slogam h1 {
+    font-size: 32px;
+    color: var(--color-text);
+    padding-left: 100px;
+}
+
+.slogam p {
+    font-size: 18px;
+    color: var(--color-text-back);
+    max-width: 316px;
+    padding-left: 94px;
+    line-height: 28px;
+}
+
+.slogam img {
+    width: 219px;
+    position: absolute;
+    right: 85px;
+    top: 63px;
+}
+
+.favorites {
+    padding: 40px 0 25px;
+    font-size: 24px;
+}
+
+footer {
+    background-color: var(--color-footer);
+    height: 62px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--color-footer-text);
+}
+
+
+
+/*============MODAL============*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #FFFFFF;
+    width: 660px;
+    height: 413px;
+    margin: 20vh auto;
+    position: relative;
+    text-align: center;
+
+}
+
+.modal .close-modal {
+    color: black;
+    position: absolute;
+    right: 320px;
+    bottom: 15px;
+    cursor: pointer;
+}
+
+.modal-overlay.active  {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content img {
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    top: 30px;
+    left: 30px;
+    border-radius: 15px;
+}
+
+.modal h1 {
+    position: absolute;
+    top: 240px;
+    filter: brightness(0.5);   
+
+}
+
+.modal p {
+    position: absolute;
+    top: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
